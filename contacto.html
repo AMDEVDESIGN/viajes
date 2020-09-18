@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/img/icon.svg">
+  <!--LLAMANDO A LOS FONDOS DE GOOGLE-->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Open+Sans:wght@400;700&family=Staatliches&display=swap"
+    rel="stylesheet">
+  <!--LLAMANDO A LOS CSS-->
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!--TITULO DE LA PAGINA-->
+  <title>AM AGENCIA DE VIAJES</title>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <!--NAVEGACION MENU-->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">AMVIAJES</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="viajes.html">VIAJES</a></li>
+          <li><a href="testimoniales.html">TESTIMONIALES</a></li>
+          <li><a href="nosotros.html">NOSOTROS</a></li>
+          <li><a href="#contacto">CONTACTO</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--FIN NAVEGACION MENU-->
+  <!--TODAS LAS SECCIONES-->
+  <main class="contenedor" id="contacto">
+    <h2 class="centrar-texto">Contacto</h2>
+
+    <div class="grid centrar-columnas">
+      <div class="columnas-12">
+        <img src="assets/img/contacto.jpg" alt="imagen contacto">
+      </div>
+      <div class="columnas-10 formulario-contacto">
+        <form action="#">
+          <div class="campo">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="Tu Nombre">
+          </div>
+          <div class="campo">
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" placeholder="Tu Correo Electrónico">
+          </div>
+          <div class="campo mensaje">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje"></textarea>
+          </div>
+          <div class="campo enviar">
+            <input type="submit" value="Enviar" class="btn btn-primario">
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <section class="container ubicacion">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="text-center">NUESTRA UBICACIÓN</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7204.81467869533!2d-56.015620418297345!3d-25.45807040772264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945f3cb85127ae1d%3A0xf24895d5476b4e51!2sTakuru%2C%20Caaguaz%C3%BA!5e0!3m2!1ses-419!2spy!4v1595902828566!5m2!1ses-419!2spy"
+          width="100%" height="350px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+          tabindex="0"></iframe>
+      </div>
+      <div class="slideanim col-md-6 text-center icon">
+        <img src="assets/img/casa.svg" alt="LOGO DE CASA" height="50rem">
+        <h3>VISITENOS</h3>
+        <p>Takuru / Barrio Villa Industrial</p>
+        <h4>Caaguazú - Paraguay</h4>
+      </div>
+      <div class="slideanim col-md-6 text-center icon">
+        <img src="assets/img/telefono.svg" alt="LOGO DE TELEFONO" height="50rem">
+        <h3>CALL CENTER</h3>
+        <p>Si posees alguna duda o necesitas más información, podes llamarnos al:</p>
+        <h4>(021) 75971248</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="final">
+    <div class="container-fluid bg-4 text-center">
+      <a href="#myPage" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+      </a>
+      <p class="copyright"><a href="https://www.alexis-munoz.com/">AM Dev Design </a> Todos los Derechos Reservados 2020
+        &copy;</p>
+    </div>
+  </footer>
+  <!--LLAMANDO LOS SCRIPTS ABAJO POR OPTIMIZACION-->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/SmoothScrolling.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <div id="ultimo"></div>
+</body>
+
+</html>

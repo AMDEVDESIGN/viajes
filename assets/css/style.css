@@ -1,0 +1,337 @@
+:root {
+    font-family: 'Staatliches', cursive;
+    font-family: 'Covered By Your Grace', cursive;
+    font-family: 'Open Sans', sans-serif;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /** 1rem = 10px **/
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+/** Globales **/
+.contenedor {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+h1, h2, h3, h4 {
+     font-family: 'Staatliches', cursive;
+    color: #15B9D5;
+}
+h1 {
+    font-size: 4.8rem;
+}
+h2 {
+    font-size: 4rem;
+    line-height: 1.2;
+}
+h3 {
+    font-size: 3.2rem;
+}
+h4{
+    font-size: 2.8rem;
+}
+img {
+    max-width: 100%;
+}
+/** Utilidades **/
+.centrar-texto {
+    text-align: center;
+}
+.no-margin {
+    margin: 0;
+}
+/*NAVEGACION*/
+.navbar {
+    margin-bottom: 0;
+    background: #15B9D5;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+}
+  
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+  
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #0066ff !important;
+    background-color: #fff !important;
+}
+  
+.navbar-default .navbar-toggle {
+    background-color: #f1f1f1;
+    border-color: transparent;
+    color: #fff !important;
+}
+/*HEADER*/
+#inicio {
+    background: url(../img/superior.jpg);
+    min-height: 600px;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+#inicio h1 {
+    color: white;
+}
+#inicio em {
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 4rem;
+    order: -1;
+    line-height: .8;
+    color: rgba(255, 255, 255, .5);
+}
+@media (min-width:768px) {
+    #inicio em {
+        font-size: 6rem;
+    }
+}
+/*Seccion-nosotros*/
+#inicio_nosotros{
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+#inicio_nosotros .col-lg-6 p{
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+    font-size: 2.2rem;
+    text-transform: initial;
+    line-height: 1.7;
+}
+/*Seccion-Viajes*/
+.inicio_viajes {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+.inicio_viajes .btn-success {
+    background-color: #DC135F;
+    border-color: #DC135F;
+    padding: .8rem 0;
+    text-transform: uppercase;
+    border-radius: .8rem;
+}
+.inicio_viajes .btn-success:hover {
+    background-color: rgb(184, 5, 73);
+    border-color: rgb(192, 7, 78);
+}
+/*Footer*/
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: rgb(192, 7, 78);
+  }
+#final{
+    padding-top: 5rem;
+}
+#final .bg-4 { 
+    background-color: #000000; 
+    color: #ffffff;
+  }
+#final .container-fluid {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+  #final .copyright {
+    margin: 0;
+    text-align: center;
+    color: #fafafa;
+}
+/*CSS DE NOSOTROS*/
+#nosotros{
+    padding-top: 10rem;
+    padding-bottom: 4rem;
+}
+#nosotros h3{
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+    font-size: 2.3rem;
+    text-transform: initial;
+    line-height: 1.7;
+}
+#iconos-nosotros{
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    background-color: #f1f1f1;
+}
+/*CSS DE VIAJES*/
+#viajes{
+    padding-top: 6rem;
+}
+/*CSS DE TESTIMONIALES*/
+#testimoniales{
+    padding-top: 6rem;
+}
+#testimoniales img{
+    height: 22rem;
+}
+.testimonios{
+    background-color: #f1f1f1;
+    padding-top: 5rem;
+}
+.testimonios h2{
+    font-size: 3.4rem;
+    color: #DC135F;
+}
+/*CSS DE CONTACTO*/
+.icon{
+    padding-top: 4rem;
+}
+.icon h3,h4{
+    color: #047b7f
+}
+.ubicacion{
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+/** GRID **/
+@media (min-width: 768px) {
+    .grid {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .centrar-columnas {
+        justify-content: center;
+    }
+    .columnas-4 {
+        flex: 0 0 calc(33.3% - 1rem);
+    }
+    .columnas-6 {
+        flex: 0 0 calc(50% - 1rem);
+    }
+    .columnas-8 {
+        flex: 0 0 calc(66.6% - 1rem);
+    }
+    .columnas-10 {
+        flex: 0 0 calc(83.3% - 1rem);
+    }
+    .columnas-12 {
+        flex: 0 0 100%;
+    }
+}
+#contacto{
+    padding-top: 7rem;
+}
+.formulario-contacto {
+    background-color: #ffffff;
+    padding: 5rem;
+}
+@media (min-width: 768px) {
+    .formulario-contacto {
+        margin-top: -10rem;
+    }
+}
+.formulario-contacto .campo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.formulario-contacto .campo label {
+    flex: 0 0 8rem;
+}
+.formulario-contacto .campo input:not([type="submit"]),
+.formulario-contacto textarea{
+    flex: 1;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+}
+.formulario-contacto textarea {
+    height: 20rem;
+}
+.formulario-contacto .enviar {
+    display: flex;
+    justify-content: flex-end;
+}
+/** BOTONES **/
+.btn {
+    display: block;
+    text-align: center;
+    padding: 1rem 3rem;
+    margin: 2rem 0;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2rem;
+    flex: 0 0 100%;
+}
+.btn:hover {
+    cursor: pointer;
+}
+@media (min-width: 768px) {
+    .btn {
+        display: inline-block;
+        flex: 0 0 auto;
+    }
+}
+.btn-primario {
+    background-color: #000000;
+}
+/*VER VIAJES*/
+.viaje{
+    padding-top: 13rem;
+    overflow: hidden;
+}
+.viaje h3 p{
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+    font-size: 2.2rem;
+    text-transform: initial;
+    line-height: 2.0;
+    padding-right: 3.2rem;
+    padding-left: 1rem;
+}
+/*Animaciones*/
+.slideanim {visibility:hidden;}
+.slide {
+  /*El nombre de la animacion*/
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  /* Duracion de la animacion */
+  animation-duration: 2s;
+  -webkit-animation-duration: 1s;
+  /* Elemento visible */
+  visibility: visible;
+}
+
+/* Modificando la opacidad a traves de los ejes */
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+/*ELIMANDO MARCA DE AGUA DE 000WEBHOST*/
+#ultimo + div{
+    visibility: hidden;
+}
